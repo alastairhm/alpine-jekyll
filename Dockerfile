@@ -7,10 +7,11 @@ RUN apk add --update \
   libxslt-dev && \
   rm -rf /var/cache/apk/* && \
   gem install jekyll && \
-  jekyll new myblog 
+  mkdir -p /blog
+
+VOLUME ["/blog"]
+WORKDIR /blog
 
 EXPOSE 80
-VOLUME ['/myblog']
-WORKDIR /myblog
 
 CMD ["jekyll","server","--port","80","--host","0.0.0.0"]
