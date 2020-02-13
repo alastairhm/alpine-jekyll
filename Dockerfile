@@ -1,17 +1,19 @@
-FROM ruby:alpine
-MAINTAINER Alastair Montgomery <alastair@montgomery.me.uk>
-
-RUN apk add --update \
-  build-base \
-  libxml2-dev \
-  libxslt-dev && \
-  rm -rf /var/cache/apk/* && \
-  gem install jekyll && \
-  mkdir -p /blog
+FROM alpine:latest
 
 VOLUME ["/blog"]
 WORKDIR /blog
-
 EXPOSE 80
 
-CMD ["jekyll","server","--port","80","--host","0.0.0.0"]
+COPY server.sh /server.sh
+
+RUN apk add --update \
+  build-base \
+  ruby \
+  ruby-dev \
+  libxml2-dev \
+  libxslt-dev && \
+  rm -rf /var/cache/apk/* && \
+  gem install bundler jekyll && \
+  mkdir -p /blog
+
+CMD ["/server.sh"]
