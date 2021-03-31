@@ -9,7 +9,7 @@ RUN apk add --update \
   libxml2-dev \
   libxslt-dev && \
   rm -rf /var/cache/apk/* && \
-  gem install bundler jekyll && \
+  gem install webrick bundler jekyll && \
   mkdir -p /blog
 
 COPY server.sh /server.sh
