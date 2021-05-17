@@ -1,5 +1,7 @@
 # Jekyll Blog Docker image
 
+[![](http://dockeri.co/image/alastairhm/alpine-jekyll)](https://index.docker.io/u/alastairhm/alpine-jekyll/)
+
 See [Jekyll Home Page](https://jekyllrb.com/)
 
 ## Create New Blog
