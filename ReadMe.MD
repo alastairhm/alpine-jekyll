@@ -1,6 +1,6 @@
 # Jekyll Blog Docker image
 
-[![](http://dockeri.co/image/alastairhm/alpine-jekyll)](https://index.docker.io/u/alastairhm/alpine-jekyll/)
+[![](https://dockerico.blankenship.io/image/alastairhm/alpine-jekyll)](https://hub.docker.com/r/alastairhm/alpine-jekyll)
 
 See [Jekyll Home Page](https://jekyllrb.com/)
 
