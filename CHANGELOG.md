@@ -8,6 +8,8 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 
 ## [Unreleased]
 
+* Rebuild & Taskfile
+
 ### Changed
 
 * Bump rexml from 3.2.4 to 3.2.5
