@@ -14,3 +14,13 @@ tasks:
     cmds:
       - docker push alastairhm/alpine-jekyll:latest
     silent: true
+  create:
+    desc: Create a new blog
+    cmds:
+      - docker run -it -p 8080:80  -v $PWD/blog:/blog alastairhm/alpine-jekyll /create.sh mysite
+    silent: true
+  test:
+    desc: Test a new blog
+    cmds:
+      - docker run -it -p 8080:80 -v $PWD/blog/mysite:/blog alastairhm/alpine-jekyll
+    silent: true
