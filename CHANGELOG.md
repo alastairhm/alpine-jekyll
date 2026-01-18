@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of December 2019).
 
-## [Unreleased]
+## [1.4.0](https://github.com/alastairhm/alpine-jekyll/releases/tag/1.4.0)
 
 * Rebuild docker image and test site
 * Rebuild & Taskfile
